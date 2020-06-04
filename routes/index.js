@@ -131,9 +131,9 @@ router.get("/exchange", function (req, res, next) {
 		console.log(test);
 		res.json({
 			rennigou: test[0],
-			hoyoyo: test[1],
+			hoyoyo: Number(test[1]),
 			rigouwang: test[2],
-			masadora: test[3],
+			masadora: Number(test[3]),
 		});
 	};
 
